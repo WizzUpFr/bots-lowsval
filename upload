@@ -1,0 +1,5 @@
+@alfred.event
+async def on_member_join(member):
+    channel = alfred.get_channel(790274325533378682)
+    embed=discord.Embed(title="Welcome!",description=f"{member.mention} Just Joined")
+    await channel.send(embed=embed)
